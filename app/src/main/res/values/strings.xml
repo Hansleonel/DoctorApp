@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DoctorApp</string>
+    <string name="profile">Perfil</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="dni">DNI</string>
+    <string name="dni_warning">Necesitas ingresar un DNI</string>
+    <string name="welcome">Bienvenido Dr.</string>
+    <string name="schedule">Horario</string>
+    <string name="schedule_description">Listado de atencion para hoy</string>
+    <string name="schedule_refresh">Horarios Actualizados</string>
+    <string name="person_name">Nombre Persona Paciente</string>
+    <string name="subject">Asunto</string>
+    <string name="description">Descripcion</string>
+    <string name="content">Contenido</string>
+    <string name="call_incoming">Incoming Call</string>
+    <string name="date">Mar 30, 9:56 pm</string>
+    <string name="action">Accion</string>
+    <string name="patient">Paciente</string>
+    <string name="notification">Notificaciones</string>
+    <string name="dni_suggestion">un maximo de 8 digitos</string>
+    <string name="password">Ingrese Password</string>
+    <string name="user_dni">Ingrese su DNI</string>
+    <string name="user_remote">Remote User</string>
+    <string name="user_password">Ingrese su password</string>
+    <string name="user_register">REGISTRARSE</string>
+    <string name="user_photo">Photo Usuario</string>
+    <string name="company_name">Red Salud</string>
+    <string name="company_name_bar">RED SALUD</string>
+    <string name="company_phrase">Un mundo de posibilidades</string>
+    <string name="recovery_password">Recuperar Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
