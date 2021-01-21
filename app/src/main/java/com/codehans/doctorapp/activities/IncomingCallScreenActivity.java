@@ -43,6 +43,10 @@ public class IncomingCallScreenActivity extends BaseActivity {
                 denyClicked();
             }
         });
+
+        mAudioPlayer = new AudioPlayer(this);
+        mAudioPlayer.playRingtone();
+        mCallId = getIntent().getStringExtra(SinchService.CALL_ID);
     }
 
 

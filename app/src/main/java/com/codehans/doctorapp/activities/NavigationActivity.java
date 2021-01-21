@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.codehans.doctorapp.R;
 import com.codehans.doctorapp.fragments.NotificationFragment;
-import com.codehans.doctorapp.fragments.PatientFragment;
+import com.codehans.doctorapp.fragments.ProfileFragment;
 import com.codehans.doctorapp.fragments.ScheduleFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -43,7 +43,7 @@ public class NavigationActivity extends AppCompatActivity {
                     selectedFragment = new NotificationFragment();
                     break;
                 case R.id.nav_patient:
-                    selectedFragment = new PatientFragment();
+                    selectedFragment = new ProfileFragment();
 
             }
             if (selectedFragment != null) {
@@ -56,7 +56,7 @@ public class NavigationActivity extends AppCompatActivity {
     };
 
     private void getNotificationCount() {
-        bottomNavigationView.getOrCreateBadge(R.id.nav_notification).setNumber(4);
+        bottomNavigationView.getOrCreateBadge(R.id.nav_notification).setNumber(1);
         bottomNavigationView.setVisibility(View.VISIBLE);
     }
 }

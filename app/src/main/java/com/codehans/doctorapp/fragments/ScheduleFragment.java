@@ -75,12 +75,14 @@ public class ScheduleFragment extends Fragment {
     private void getDataSchedules() {
         ArrayList<Schedule> scheduleArrayList = new ArrayList<>();
 
-        scheduleArrayList.add(new Schedule(1000000, "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80", "Raquel Torres Joaquin", "Dolor Abdominal", "Dolor en el centro del estomago durante una semana", "7 Mar, 4:26 pm"));
+        scheduleArrayList.add(new Schedule(1234567, "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80", "Raquel Torres Joaquin", "Dolor Abdominal", "Dolor en el centro del estomago durante una semana", "7 Mar, 4:26 pm"));
         scheduleArrayList.add(new Schedule(2000000, "https://cdn.fs.teachablecdn.com/ezN0MmFuQMONni797t1D", "Patricia Gamarra Brescia", "Gastritis", "Dolor durante 1 semana y media", "7 Mar, 5:30 pm"));
         scheduleArrayList.add(new Schedule(3000000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDeaYzC2sP-L420tZa_LBFRNWQx4t9GZ4Ig&usqp=CAU", "Susana Belaunde Caballero", "Dolor localizado", "Dolor en el centro del estomago de manera eventual", "7 Mar, 6:00 pm"));
         scheduleArrayList.add(new Schedule(4000000, "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80", "Juan Alvaro Miro", "Dolor gastrointestinal", "Dolor en el lado izquierdo del estomago", "7 Mar, 6:30 pm"));
         scheduleArrayList.add(new Schedule(5000000, "https://upload.wikimedia.org/wikipedia/commons/d/de/Sam_Worthington_4%2C_2013.jpg", "Rodrigo Castro Alvarado", "Gastritis", "Dolor constante en el parte abdominal", "7 Mar, 7:00 pm"));
-        scheduleArrayList.add(new Schedule(6000000, "https://app.employmentjamaica.com/uploads/jobseekers/4eba1078899bfa19831ee81a99daac3e.jpg", "Augusto Moscoso Robert", "Dolor Gastrointestinal", "Dolor por 3 semanas", "7 mar, 7:30 pm"));
+        scheduleArrayList.add(new Schedule(6000000, "https://app.employmentjamaica.com/uploads/jobseekers/4eba1078899bfa19831ee81a99daac3e.jpg", "Augusto Moscoso Robert", "Dolor Gastrointestinal", "Dolor por 3 semanas", "7 Mar, 7:30 pm"));
+        scheduleArrayList.add(new Schedule(7000000, "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", "Juan Castro Muriel", "Intoxicación", "Dolor intenso durante 1 noche", "7 Mar, 8:00 pm"));
+        scheduleArrayList.add(new Schedule(8000000, "https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", "Ivan Condory Miró", "Intoxicacion", "Dolor intenso durante 2 noches", "7 Mar, 8:30 pm"));
 
         ScheduleAdapter scheduleAdapter = new ScheduleAdapter(getContext(), scheduleArrayList);
         scheduleAdapter.notifyDataSetChanged();
@@ -96,8 +98,12 @@ public class ScheduleFragment extends Fragment {
                 String idPerson = ((TextView) recyclerViewSchedules.findViewHolderForAdapterPosition(recyclerViewSchedules.getChildLayoutPosition(view))
                         .itemView.findViewById(R.id.item_schedule_id)).getText().toString();
 
+                String namePerson = ((TextView)recyclerViewSchedules.findViewHolderForAdapterPosition(recyclerViewSchedules.getChildLayoutPosition(view))
+                .itemView.findViewById(R.id.item_schedule_title)).getText().toString();
+
                 Intent intent = new Intent(getContext(), PlaceCallActivity.class);
                 intent.putExtra("idPerson", idPerson);
+                intent.putExtra("namePerson", namePerson);
                 startActivity(intent);
             }
         });

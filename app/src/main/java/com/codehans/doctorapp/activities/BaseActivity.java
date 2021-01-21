@@ -1,6 +1,5 @@
 package com.codehans.doctorapp.activities;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -16,10 +15,11 @@ import android.widget.Toast;
 
 import com.codehans.doctorapp.services.SinchService;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 
-public abstract class BaseActivity extends Activity implements ServiceConnection {
+public abstract class BaseActivity extends AppCompatActivity implements ServiceConnection {
 
     private SinchService.SinchServiceInterface mSinchServiceInterface;
 

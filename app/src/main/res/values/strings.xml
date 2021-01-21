@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">DoctorApp</string>
     <string name="profile">Perfil</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="notifications_description">Revisa tus notificaciones aquí</string>
+    <string name="medical_time">Pronto comenzara una nueva cita por video llamada</string>
     <string name="sign_in">Ingresar</string>
     <string name="dni">DNI</string>
     <string name="dni_warning">Necesitas ingresar un DNI</string>
@@ -12,10 +15,16 @@
     <string name="subject">Asunto</string>
     <string name="description">Descripcion</string>
     <string name="content">Contenido</string>
+    <string name="timer">00:00</string>
     <string name="call_incoming">Incoming Call</string>
+    <string name="calling">Calling</string>
     <string name="date">Mar 30, 9:56 pm</string>
     <string name="action">Accion</string>
+    <string name="doctor">Doctor</string>
+    <string name="doctor_name">Juan Muñoz Castro</string>
+    <string name="doctor_specialty">Gastroenterologo Especialista 🥼🏥</string>
     <string name="patient">Paciente</string>
+    <string name="patients">Pacientes</string>
     <string name="notification">Notificaciones</string>
     <string name="dni_suggestion">un maximo de 8 digitos</string>
     <string name="password">Ingrese Password</string>
@@ -24,10 +33,17 @@
     <string name="user_password">Ingrese su password</string>
     <string name="user_register">REGISTRARSE</string>
     <string name="user_photo">Photo Usuario</string>
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_description">Puedes encontrar tus atenciones y los perfiles de tus pacientes aqui</string>
     <string name="company_name">Red Salud</string>
     <string name="company_name_bar">RED SALUD</string>
     <string name="company_phrase">Un mundo de posibilidades</string>
+    <string name="medical_appointment">Cita Medica</string>
+    <string name="medical_care">Atenciones</string>
+    <string name="medical_followers">Seguidores</string>
     <string name="recovery_password">Recuperar Password</string>
+    <string name="date_day">Hoy</string>
+    <string name="time_day">Hace 5 minutos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

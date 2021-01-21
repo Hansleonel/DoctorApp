@@ -66,6 +66,7 @@ public class MainActivity extends BaseActivity implements SinchService.StartFail
 
     private void openPlaceCallActivity() {
         Intent mainActivity = new Intent(this, NavigationActivity.class);
+        mainActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(mainActivity);
     }
 

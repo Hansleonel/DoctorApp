@@ -14,7 +14,7 @@
         android:background="@color/colorBackground"
         android:orientation="vertical">
 
-        <TextView
+    <TextView
             android:id="@+id/remoteUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
